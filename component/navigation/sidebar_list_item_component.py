@@ -9,9 +9,9 @@ class SidebarListItemComponent(BaseComponent):
     def __init__(self, page: Page, identifier: str) -> None:
         super().__init__(page)
 
-        self.icon = page.get_by_test_id(f"{identifier}-courses-drawer-list-item-icon")
-        self.title = page.get_by_test_id(f"{identifier}-courses-drawer-list-item-title-text")
-        self.button = page.get_by_test_id(f"{identifier}-courses-drawer-list-item-button")
+        self.icon = page.get_by_test_id(f"{identifier}-drawer-list-item-icon")
+        self.title = page.get_by_test_id(f"{identifier}-drawer-list-item-title-text")
+        self.button = page.get_by_test_id(f"{identifier}-drawer-list-item-button")
 
     def check_visible(self, title: str) -> None:
         expect(self.icon).to_be_visible()
