@@ -120,7 +120,7 @@ class CreateCoursePage(BasePage):
     def check_visible_preview_image(self) -> None:
         expect(self.preview_image).to_be_visible()
 
-    def upload_preview_image(self, file: str):
+    def upload_preview_image(self, file: str) -> None:
         self.preview_image_upload_input.set_input_files(file)
 
     def check_visible_create_course_form(
