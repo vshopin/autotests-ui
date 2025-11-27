@@ -1,4 +1,4 @@
-from playwright.sync_api import Page, expect
+from playwright.sync_api import Page
 
 from component.charts.chart_view_component import ChartViewComponent
 from component.dashboard.dashboard_toolbar_view_component import DashboardToolbarViewComponent
