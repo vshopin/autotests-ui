@@ -1,6 +1,7 @@
 from pages.dashboard_page import DashboardPage
 import pytest
 
+
 @pytest.mark.dashboard
 @pytest.mark.regression
 def test_dashboard_displaying(dashboard_page_with_state: DashboardPage):
@@ -16,5 +17,3 @@ def test_dashboard_displaying(dashboard_page_with_state: DashboardPage):
     dashboard_page_with_state.check_visible_courses_chart()
     dashboard_page_with_state.check_visible_students_chart()
     dashboard_page_with_state.check_visible_activities_chart()
-
-
